@@ -5,7 +5,7 @@ using namespace std;
 class Post
 {
 private:
-	string Text;
+	string text;
 	Media* media;
 public:
 	Post(string text);
