@@ -8,7 +8,7 @@ using namespace std;
 class US
 {
 private:
-	map<unsigned long, User*> users;
+	map <unsigned long, User*> users;
 public:
 	User* registerUser(string uName, bool bUser);
 	void removeUser(User* user);

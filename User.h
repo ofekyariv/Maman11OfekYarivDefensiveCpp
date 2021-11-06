@@ -1,12 +1,15 @@
 #pragma once
 #include<list>
+#include<string>
 #include"Post.h"
 #include"Message.h"
+
 using namespace std;
+
 class User
 {
 protected:
-	US* us;
+	//US* us;
 	unsigned long id;
 	string name;
 	list<unsigned long> friends;
