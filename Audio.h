@@ -1,7 +1,6 @@
 #pragma once
 #include "Media.h"
-class Audio :
-    public Media
+class Audio : public Media
 {
 };
 

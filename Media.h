@@ -1,5 +1,7 @@
 #pragma once
-class Media
+struct Media
 {
+public:
+	virtual void display();
 };
 
