@@ -1,14 +1,20 @@
 #include "User.h"
 #include<string>
 using namespace std;
+
 User::User() {
 	//create user;
 }
+//User::User(string uName) {
+	//create user;
+	//this->uName = uName;
+	//this->uId++;
+//}
 User::~User() {
 	//somthing;
 }
 string User::getName() {
-	return this->name;
+	return this->uName;
 }
 void User::addFriend(User* user){
 	//addFriend;

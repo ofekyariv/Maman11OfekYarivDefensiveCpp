@@ -1,8 +1,10 @@
 #include "USocial.h"
+#include "User.h"
 #include<string>
 using namespace std;
 User* USocial::registerUser(string uName) {
 	//register user;
+	
 }
 User* USocial::registerUser(string uName, bool bUser) {
 	//register user;

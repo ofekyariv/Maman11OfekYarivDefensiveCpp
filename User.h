@@ -5,19 +5,18 @@
 #include"Message.h"
 
 using namespace std;
-class USocial;
 class User
 {
 protected:
 	//?
 	USocial* us;
-	unsigned long id;
-	string name;
+	static unsigned long uId;
+	string uName;
 	list<unsigned long> friends;
 	list<Post*> posts;
 	list<Message*> receivedMsgs;
-
 	User();
+	//User(string uName);
 	~User();
 public:
 	unsigned long getId();

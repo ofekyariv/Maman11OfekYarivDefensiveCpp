@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class USocial
+static class USocial
 {
 private:
 	map <unsigned long, User*> users;
