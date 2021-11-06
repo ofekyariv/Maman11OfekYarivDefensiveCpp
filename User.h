@@ -27,7 +27,7 @@ public:
 	list<Post*> getPosts();
 	void viewFriendsPosts();
 	void receiveMessage(Message* message);
-	void sendMessage(User* user, Message* message);
+	virtual void sendMessage(User* user, Message* message);
 	void viewReceivedMessages();
 };
 
