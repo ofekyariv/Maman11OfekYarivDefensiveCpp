@@ -18,7 +18,7 @@
     <ClCompile Include="Maman11OfekYariv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="US.cpp">
+    <ClCompile Include="USocial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Media.cpp">
@@ -47,7 +47,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="US.h">
+    <ClInclude Include="USocial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Media.h">

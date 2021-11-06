@@ -5,11 +5,11 @@
 #include"Message.h"
 
 using namespace std;
-
+class USocial;
 class User
 {
 protected:
-	//US* us;
+	USocial* us;
 	unsigned long id;
 	string name;
 	list<unsigned long> friends;
@@ -28,6 +28,6 @@ public:
 	void viewFriendsPosts();
 	void receiveMessage(Message* message);
 	void sendMessage(User* user, Message* message);
-	void viewReceivedMEssages();
+	void viewReceivedMessages();
 };
 
