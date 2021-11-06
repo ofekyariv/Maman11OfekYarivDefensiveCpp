@@ -9,6 +9,7 @@ class USocial;
 class User
 {
 protected:
+	//?
 	USocial* us;
 	unsigned long id;
 	string name;

@@ -3,6 +3,7 @@
 class Audio : public Media
 {
 public:
+	Audio();
 	void display();
 };
 

@@ -3,6 +3,7 @@
 class Video : public Media
 {
 public:
+	Video();
 	void display();
 };
 

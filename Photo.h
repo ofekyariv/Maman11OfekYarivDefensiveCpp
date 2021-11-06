@@ -3,6 +3,7 @@
 class Photo : public Media
 {
 public:
+	Photo();
 	void display();
 };
 

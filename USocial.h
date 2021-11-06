@@ -10,6 +10,7 @@ class USocial
 private:
 	map <unsigned long, User*> users;
 public:
+	User* registerUser(string uName);
 	User* registerUser(string uName, bool bUser);
 	void removeUser(User* user);
 	User* getUserById(unsigned long uId);

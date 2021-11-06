@@ -1,8 +1,11 @@
 ﻿// 05/11/2021 - Maman 11 by Ofek Yariv
 #include "USocial.h"
 #include "User.h"
+#include "Audio.h"
+#include "Photo.h"
 #include <exception>
 #include <iostream>
+using namespace std;
 int main()
 {
 	USocial us;

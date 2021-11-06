@@ -7,6 +7,7 @@ class Message
 private:
 	string text;
 public:
+	Message(string Text);
 	string getText();
 };
 
