@@ -139,13 +139,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Audio.cpp" />
+    <ClCompile Include="BusinessUser.cpp" />
     <ClCompile Include="Maman11OfekYariv.cpp" />
     <ClCompile Include="Media.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="Photo.cpp" />
+    <ClCompile Include="Post.cpp" />
     <ClCompile Include="US.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="Video.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Audio.h" />
+    <ClInclude Include="BusinessUser.h" />
     <ClInclude Include="Media.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="Photo.h" />
+    <ClInclude Include="Post.h" />
     <ClInclude Include="US.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="Video.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

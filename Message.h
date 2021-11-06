@@ -1,7 +1,5 @@
 #pragma once
-class US
+class Message
 {
-public:
-
 };
 
