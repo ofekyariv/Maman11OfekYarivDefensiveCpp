@@ -3,8 +3,7 @@
 #include<string>
 using namespace std;
 User* USocial::registerUser(string uName) {
-	//register user;
-	
+	//users.insert()
 }
 User* USocial::registerUser(string uName, bool bUser) {
 	//register user;

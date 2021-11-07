@@ -3,15 +3,13 @@
 using namespace std;
 
 User::User() {
-	//create user;
-}
-//User::User(string uName) {
-	//create user;
-	//this->uName = uName;
 	//this->uId++;
-//}
+}
 User::~User() {
 	//somthing;
+}
+unsigned long User::getId() {
+	return this->uId;
 }
 string User::getName() {
 	return this->uName;
