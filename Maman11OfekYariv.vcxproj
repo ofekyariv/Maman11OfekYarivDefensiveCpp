@@ -142,7 +142,6 @@
     <ClCompile Include="Audio.cpp" />
     <ClCompile Include="BusinessUser.cpp" />
     <ClCompile Include="Maman11OfekYariv.cpp" />
-    <ClCompile Include="Media.cpp" />
     <ClCompile Include="Message.cpp" />
     <ClCompile Include="Photo.cpp" />
     <ClCompile Include="Post.cpp" />

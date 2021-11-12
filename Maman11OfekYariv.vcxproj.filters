@@ -21,9 +21,6 @@
     <ClCompile Include="USocial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Media.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Photo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

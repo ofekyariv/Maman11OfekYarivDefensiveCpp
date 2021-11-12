@@ -8,6 +8,7 @@ using namespace std;
 class USocial;
 class User
 {
+	friend class USocial;
 protected:
 	USocial* us;
 	unsigned long uId;
@@ -16,11 +17,13 @@ protected:
 	list<Post*> posts;
 	list<Message*> receivedMsgs;
 	User();
+	//User(string uName, unsigned long uId);
 	~User();
 public:
 	unsigned long getId();
 	string getName();
 	void addFriend(User* user);
+	void removeFriend(User* user);
 	void post(string text);
 	void post(string text, Media* media);
 	list<Post*> getPosts();

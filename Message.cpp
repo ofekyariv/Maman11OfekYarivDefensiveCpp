@@ -6,5 +6,5 @@ Message::Message(string text) {
 	this->text = text;
 }
 string Message::getText() {
-	return this->text;
+	return text;
 }
