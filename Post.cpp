@@ -3,16 +3,14 @@
 #include <iostream>
 
 using namespace std;
-
+//create post
 Post::Post(string text) {
 	this->text = text;
-	cout << text << endl;
 }
+//create post with media
 Post::Post(string text, Media* media) {
 	this->text = text;
-	cout << text << endl;
 	this->media = media;
-	media->display();
 }
 string Post::getText() {
 	return this->text;

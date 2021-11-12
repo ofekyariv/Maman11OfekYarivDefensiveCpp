@@ -1,8 +1,7 @@
 #include "User.h"
-#include <algorithm>
+#include "USocial.h"
 #include <iostream>
 #include<string>
-#include "USocial.h"
 using namespace std;
 
 User::User() {
@@ -15,69 +14,64 @@ unsigned long User::getId() {
 string User::getName() {
 	return uName;
 }
+//add friend, check if he is not in my friend list already
 void User::addFriend(User* user){
-	//addFriend;
 	if (std::find(friends.begin(), friends.end(), user->getId()) != friends.end()) {
-		std::cout << "You are alredy friends!!" << std::endl;
+		std::cout << "Error: Alredy friends" << std::endl;
 	}
 	else {
 		friends.push_back(user->getId());
-		std::cout << "Friend " + user->getName() + " added" << std::endl;
 	}
 }
+//remove friend, check if he is in my friend list
 void User::removeFriend(User* user)
 {
-
 	if (std::find(friends.begin(), friends.end(), user->getId()) != friends.end()) {
 		friends.remove(user->getId());
-		std::cout << "Friend " + user->getName() + " remvoved" << std::endl;
 	}
 	else {
-		std::cout << "You are alredy friends!!" << std::endl;
+		std::cout << "Error: Not friends" << std::endl;
 	}
 }
+//post for a specific user
 void User::post(string text) {
 	Post* post = new Post(text);
 	posts.push_front(post);
-	
-	delete post;
 }
 void User::post(string text, Media* media) {
 	Post* post = new Post(text, media);
 	posts.push_front(post);
-	delete post;
 }
 list<Post*> User::getPosts() {
 	return posts;
 }
+//view friends posts
 void User::viewFriendsPosts() {
-	//viewFriendsPosts;
 	for (auto const& i : friends) {
 		User* user = us->getUserById(i);
 		for (auto const& j : user->getPosts()) {
 			cout << j->getText() << endl;
 			if (j->getMedia())
-				cout << j->getText() << endl;
-			cout << "\n" << endl;
+				j->getMedia()->display();
 		}
 	}
 }
+//receive message
 void User::receiveMessage(Message* message) {
-	//receiveMessage
 	receivedMsgs.push_back(message);
 }
+//send message as a regular user. check if the message is sent to a friend
 void User::sendMessage(User* user, Message* message) {
-	//sendMessage
 	if (find(friends.begin(), friends.end(), user->getId()) != friends.end()) {
 		user->receiveMessage(message);
 	}
 	else
 	{
-		cout << "Only premium users can send to not friend, upgrade? its only 100$ a day" << endl;
+		cout << "Error: You are not a Business user. you cannot send this massage, he is not your friend." << endl;
 	}
 }
+//view received messages
 void User::viewReceivedMessages() {
-	//viewReceivedMessages;
 	for (auto const& message : receivedMsgs) {
 		cout << message->getText() << endl;
 	}

@@ -17,7 +17,6 @@ protected:
 	list<Post*> posts;
 	list<Message*> receivedMsgs;
 	User();
-	//User(string uName, unsigned long uId);
 	~User();
 public:
 	unsigned long getId();
