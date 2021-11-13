@@ -23,11 +23,17 @@ User* USocial::registerUser(string uName, bool business) {
 	uId++;
 	return user;
 }
-//remove user
+//remove user from social map and from friend lists
 void USocial::removeUser(User* user) {
 	users.erase(user->getId());
+	for (auto const& temp : users) {
+		if (std::find(temp.second->friends.begin(), temp.second->friends.end(), user->getId()) != temp.second->friends.end())
+			temp.second->removeFriend(user);
+	}
+	delete(user);
+	
 }
-//get user by id (the +1 is because the uId start from 0)
+//get user by id
 User* USocial::getUserById(unsigned long uId) {
-	return users[uId+1];
+	return users[uId];
 }
